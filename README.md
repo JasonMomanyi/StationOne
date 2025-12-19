@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# StationOne
 
-# Run and deploy your AI Studio app
+A digital survey calculations assistant — library / CLI focused.
 
-This contains everything you need to run your app locally.
+Quick start
 
-View your app in AI Studio: https://ai.studio/apps/drive/1qXvCrU0zgKpzuLngSsM6bYICqMOJQK7t
+- Install dependencies: `npm ci`
+- Build: `npm run build`
+- Type check: `npm run typecheck`
+- Lint: `npm run lint`
 
-## Run Locally
+Offline caching
 
-**Prerequisites:**  Node.js
+This project includes a service worker (public/service-worker.js) and a small PWA manifest (public/manifest.json) to enable offline caching of the app's shell and assets. To enable the service worker, register it from your app entry point:
 
+```
+import { registerServiceWorker } from './sw-register';
+registerServiceWorker();
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Support
+
+[![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) Support on GitHub](https://github.com/JasonMomanyi)
