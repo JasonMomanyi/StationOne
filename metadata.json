@@ -1,0 +1,7 @@
+{
+  "name": "Station One Survey",
+  "description": "A High-Performance, Cross-Platform Geomatics Computation & Field Guidance System. Features professional traverse adjustment, control network analysis, and AI-driven field intelligence.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
